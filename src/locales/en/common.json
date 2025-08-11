@@ -1,6 +1,6 @@
 {
   "dashboard": {
-    "title": "TaskFlow Dashboard",
+    "title": "Dashboard",
     "welcome": "Welcome to our modern React application!",
     "stats": {
       "totalTasks": "Total Tasks",
@@ -24,7 +24,15 @@
   "actions": {
     "clear": "Clear",
     "clearAll": "Clear all",
-    "more": "More options"
+    "more": "More options",
+    "close": "Close",
+    "cancel": "Cancel",
+    "create": "Create Task",
+    "creating": "Creating...",
+    "edit": "Edit",
+    "delete": "Delete",
+    "update": "Update",
+    "deleting": "Deleting..."
   },
   "common": {
     "selectOption": "Select option"
@@ -55,6 +63,10 @@
       "high": "High Priority"
     },
     "fields": {
+      "title": "Title",
+      "description": "Description",
+      "status": "Status",
+      "priority": "Priority",
       "due": "Due",
       "assignedTo": "Assigned to"
     },
@@ -63,7 +75,29 @@
       "showing": "Showing {{count}} of {{total}} tasks",
       "newTask": "+ New Task",
       "emptyTitle": "No tasks found",
-      "emptySubtitle": "Try adjusting your search or filters to find what you're looking for."
+      "emptySubtitle": "Try adjusting your search or filters to find what you're looking for.",
+      "loading": "Loading tasks..."
+    },
+    "add": {
+      "title": "Add New Task",
+      "titlePlaceholder": "Enter task title...",
+      "descriptionPlaceholder": "Describe what needs to be done...",
+      "assigneePlaceholder": "Enter assignee name..."
+    },
+    "edit": {
+      "title": "Edit Task",
+      "updating": "Updating...",
+      "update": "Update Task",
+      "assigneePlaceholder": "Enter assignee name..."
+    },
+    "delete": {
+      "title": "Delete Task",
+      "message": "Are you sure you want to delete this task?",
+      "confirm": "Delete Task",
+      "deleting": "Deleting...",
+      "confirmation": "Are you sure you want to delete this task?",
+      "description": "This action cannot be undone. The task will be permanently removed from the system.",
+      "warning": "Warning: This action is irreversible!"
     },
     "mock": {
       "updateWebsiteTitle": "Update website design",
@@ -76,6 +110,108 @@
       "fixLoginBugDesc": "Resolve authentication issue in mobile app",
       "optimizePerfTitle": "Performance optimization",
       "optimizePerfDesc": "Optimize database queries and API response times"
+    }
+  },
+  "analytics": {
+    "title": "Task Analytics",
+    "subtitle": "Track your team performance and task insights",
+    "metrics": {
+      "totalTasks": "Total Tasks",
+      "completed": "Completed",
+      "inProgress": "In Progress",
+      "overdue": "Overdue",
+      "active": "Active",
+      "completionRate": "completion",
+      "working": "Working",
+      "attention": "Needs attention"
+    },
+    "charts": {
+      "statusDistribution": "Status Distribution",
+      "priorityDistribution": "Priority Distribution",
+      "total": "Total"
+    },
+    "insights": {
+      "highPriority": "high priority tasks need attention",
+      "greatProgress": "Great progress! Keep it up!"
+    },
+    "quickStats": {
+      "title": "Quick Insights",
+      "completionRate": "Completion Rate",
+      "pending": "Pending Tasks",
+      "important": "Important Tasks"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Customize your TaskFlow experience and manage preferences",
+    "saved": "Settings saved successfully!",
+    "saving": "Saving...",
+    "save": "Save Settings",
+    "tabs": {
+      "tasks": "Task Management",
+      "app": "App Settings",
+      "notifications": "Notifications",
+      "data": "Data & Export"
+    },
+    "tasks": {
+      "title": "Task Management Settings",
+      "autoArchive": "Auto-archive completed tasks",
+      "autoArchiveDesc": "Automatically move completed tasks to archive after 30 days",
+      "deadlineNotifications": "Deadline notifications",
+      "deadlineNotificationsDesc": "Get notified when tasks are approaching deadline",
+      "defaultFilters": "Default filters",
+      "defaultStatus": "Default status filter",
+      "statistics": "Task Statistics",
+      "totalTasks": "Total tasks",
+      "completedTasks": "Completed",
+      "pendingTasks": "Pending"
+    },
+    "app": {
+      "title": "Application Settings",
+      "language": "Language",
+      "theme": "Theme",
+      "lightTheme": "Light Theme",
+      "darkTheme": "Dark Theme",
+      "fontSize": "Font Size",
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large",
+      "density": "Interface Density",
+      "compact": "Compact",
+      "comfortable": "Comfortable",
+      "spacious": "Spacious"
+    },
+    "notifications": {
+      "title": "Notification Preferences",
+      "email": "Email notifications",
+      "emailDesc": "Receive important updates via email",
+      "push": "Push notifications",
+      "pushDesc": "Get browser push notifications",
+      "taskReminders": "Task reminders",
+      "taskRemindersDesc": "Daily reminders for pending tasks"
+    },
+    "data": {
+      "title": "Data Management & Export",
+      "export": "Export Tasks",
+      "exportDesc": "Download your tasks in various formats",
+      "exportJSON": "Export as JSON",
+      "management": "Data Management",
+      "managementDesc": "Manage your data and reset to defaults",
+      "resetToMock": "Reset to Mock Data",
+      "backup": "Backup Settings",
+      "backupFrequency": "Backup frequency",
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly",
+      "storage": "Storage Information",
+      "totalTasks": "Total tasks",
+      "storageUsed": "Storage used"
+    },
+    "reset": {
+      "title": "Reset to Mock Data",
+      "message": "This will clear all your current tasks and replace them with mock data. This action cannot be undone.",
+      "cancel": "Cancel",
+      "confirm": "Reset Data"
     }
   }
 }

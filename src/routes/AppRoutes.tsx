@@ -10,7 +10,12 @@ const NotFound = lazy(() => import('../pages/NotFound'));
 
 export default function AppRoutes() {
   return (
-    <BrowserRouter>
+    <BrowserRouter
+      future={{
+        v7_startTransition: true,
+        v7_relativeSplatPath: true,
+      }}
+    >
       <Suspense fallback={<div className="p-6">Loading...</div>}>
         <Routes>
           <Route element={<MainLayout />}>
