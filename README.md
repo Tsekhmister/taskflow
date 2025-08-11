@@ -2,6 +2,11 @@
 
 A modern, responsive React dashboard built with enterprise-grade technologies for efficient task management and team collaboration.
 
+## 🌐 Live Demo
+
+[View Live Demo](taskflow-beige-pi.vercel.app)
+
+
 ## ✨ Features
 
 - **📊 Interactive Dashboard** - Real-time task statistics and analytics
@@ -82,10 +87,6 @@ src/
 - **Load Time**: Fast initial render with React 18 features
 - **Runtime**: Efficient state management with Redux Toolkit
 - **Accessibility**: WCAG 2.1 AA compliance
-
-## 🌐 Live Demo
-
-[View Live Demo](https://taskflow-git-develop-serhiis-projects-9167b102.vercel.app)
 
 ## 📄 License
 
