@@ -13,7 +13,7 @@ export const selectFilteredTasks = createSelector(
   [
     selectAllTasks,
     (
-      state: RootState,
+      _state: RootState,
       filters: {
         search?: string;
         status?: TaskStatus | 'all';
@@ -55,18 +55,18 @@ export const selectTasksStats = createSelector([selectAllTasks], tasks => {
 
 // Selector for getting task by ID
 export const selectTaskById = createSelector(
-  [selectAllTasks, (state: RootState, taskId: string) => taskId],
+  [selectAllTasks, (_state: RootState, taskId: string) => taskId],
   (tasks, taskId) => tasks.find(task => task.id === taskId)
 );
 
 // Selector for number of tasks by status
 export const selectTasksByStatus = createSelector(
-  [selectAllTasks, (state: RootState, status: TaskStatus) => status],
+  [selectAllTasks, (_state: RootState, status: TaskStatus) => status],
   (tasks, status) => tasks.filter(task => task.status === status)
 );
 
 // Selector for number of tasks by priority
 export const selectTasksByPriority = createSelector(
-  [selectAllTasks, (state: RootState, priority: TaskPriority) => priority],
+  [selectAllTasks, (_state: RootState, priority: TaskPriority) => priority],
   (tasks, priority) => tasks.filter(task => task.priority === priority)
 );
