@@ -1,0 +1,81 @@
+{
+  "dashboard": {
+    "title": "TaskFlow Панель керування",
+    "welcome": "Ласкаво просимо до нашого сучасного React додатку!",
+    "stats": {
+      "totalTasks": "Всього завдань",
+      "completedTasks": "Завершені завдання",
+      "pendingTasks": "Очікуючі завдання"
+    },
+    "navigation": {
+      "dashboard": "Панель керування",
+      "tasks": "Завдання",
+      "analytics": "Аналітика",
+      "settings": "Налаштування"
+    }
+  },
+  "auth": {
+    "login": "Увійти",
+    "logout": "Вийти",
+    "email": "Електронна пошта",
+    "password": "Пароль",
+    "submit": "Підтвердити"
+  },
+  "actions": {
+    "clear": "Очистити",
+    "clearAll": "Очистити все",
+    "more": "Більше опцій"
+  },
+  "common": {
+    "selectOption": "Оберіть опцію"
+  },
+  "tasks": {
+    "title": "Управління завданнями",
+    "subtitle": "Керуйте та відстежуйте завдання та проєкти вашої команди",
+    "filters": {
+      "searchLabel": "Пошук завдань",
+      "searchPlaceholder": "Пошук за назвою, описом або виконавцем...",
+      "status": "Статус",
+      "priority": "Пріоритет",
+      "statusPlaceholder": "Оберіть статус",
+      "priorityPlaceholder": "Оберіть пріоритет",
+      "allStatus": "Всі статуси",
+      "allPriority": "Всі пріоритети",
+      "active": "Активні фільтри:",
+      "search": "Пошук"
+    },
+    "status": {
+      "pending": "Очікує",
+      "inProgress": "В процесі",
+      "completed": "Завершено"
+    },
+    "priority": {
+      "low": "Низький пріоритет",
+      "medium": "Середній пріоритет",
+      "high": "Високий пріоритет"
+    },
+    "fields": {
+      "due": "Дедлайн",
+      "assignedTo": "Виконавець"
+    },
+    "list": {
+      "title": "Список завдань",
+      "showing": "Показано {{count}} з {{total}} завдань",
+      "newTask": "+ Нове завдання",
+      "emptyTitle": "Завдання не знайдено",
+      "emptySubtitle": "Спробуйте змінити пошук або фільтри, щоб знайти потрібне."
+    },
+    "mock": {
+      "updateWebsiteTitle": "Оновити дизайн сайту",
+      "updateWebsiteDesc": "Редизайн головної сторінки з сучасними UI компонентами",
+      "reviewFeedbackTitle": "Переглянути відгуки користувачів",
+      "reviewFeedbackDesc": "Проаналізувати та категоризувати відгуки з бета-тестування",
+      "updateDocsTitle": "Оновити документацію",
+      "updateDocsDesc": "Оновити API документацію з новими ендпоінтами та прикладами",
+      "fixLoginBugTitle": "Виправити помилку входу",
+      "fixLoginBugDesc": "Вирішити проблему з аутентифікацією в мобільному застосунку",
+      "optimizePerfTitle": "Оптимізація продуктивності",
+      "optimizePerfDesc": "Оптимізувати запити до бази та час відповіді API"
+    }
+  }
+}

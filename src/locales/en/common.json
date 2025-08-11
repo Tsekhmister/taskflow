@@ -1,0 +1,81 @@
+{
+  "dashboard": {
+    "title": "TaskFlow Dashboard",
+    "welcome": "Welcome to our modern React application!",
+    "stats": {
+      "totalTasks": "Total Tasks",
+      "completedTasks": "Completed Tasks",
+      "pendingTasks": "Pending Tasks"
+    },
+    "navigation": {
+      "dashboard": "Dashboard",
+      "tasks": "Tasks",
+      "analytics": "Analytics",
+      "settings": "Settings"
+    }
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Submit"
+  },
+  "actions": {
+    "clear": "Clear",
+    "clearAll": "Clear all",
+    "more": "More options"
+  },
+  "common": {
+    "selectOption": "Select option"
+  },
+  "tasks": {
+    "title": "Tasks Management",
+    "subtitle": "Manage and track your team's tasks and projects",
+    "filters": {
+      "searchLabel": "Search Tasks",
+      "searchPlaceholder": "Search by task name, description, or assignee...",
+      "status": "Status",
+      "priority": "Priority",
+      "statusPlaceholder": "Select status",
+      "priorityPlaceholder": "Select priority",
+      "allStatus": "All Status",
+      "allPriority": "All Priority",
+      "active": "Active filters:",
+      "search": "Search"
+    },
+    "status": {
+      "pending": "Pending",
+      "inProgress": "In Progress",
+      "completed": "Completed"
+    },
+    "priority": {
+      "low": "Low Priority",
+      "medium": "Medium Priority",
+      "high": "High Priority"
+    },
+    "fields": {
+      "due": "Due",
+      "assignedTo": "Assigned to"
+    },
+    "list": {
+      "title": "Task List",
+      "showing": "Showing {{count}} of {{total}} tasks",
+      "newTask": "+ New Task",
+      "emptyTitle": "No tasks found",
+      "emptySubtitle": "Try adjusting your search or filters to find what you're looking for."
+    },
+    "mock": {
+      "updateWebsiteTitle": "Update website design",
+      "updateWebsiteDesc": "Redesign the main landing page with modern UI components",
+      "reviewFeedbackTitle": "Review user feedback",
+      "reviewFeedbackDesc": "Analyze and categorize user feedback from the beta testing phase",
+      "updateDocsTitle": "Update documentation",
+      "updateDocsDesc": "Update API documentation with new endpoints and examples",
+      "fixLoginBugTitle": "Fix login bug",
+      "fixLoginBugDesc": "Resolve authentication issue in mobile app",
+      "optimizePerfTitle": "Performance optimization",
+      "optimizePerfDesc": "Optimize database queries and API response times"
+    }
+  }
+}
