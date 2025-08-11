@@ -89,22 +89,22 @@ export default function CustomSelect({
         className={`
           w-full ${sizeClasses[size]} 
           flex items-center justify-between
-          bg-white border border-gray-300 rounded-lg
-          text-left text-gray-900
+          bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg
+          text-left text-gray-900 dark:text-white
           transition-all duration-200 ease-in-out
-          hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500
-          disabled:bg-gray-50 disabled:text-gray-400 disabled:cursor-not-allowed
+          hover:border-gray-400 dark:hover:border-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500
+          disabled:bg-gray-50 dark:disabled:bg-gray-800 disabled:text-gray-400 dark:disabled:text-gray-500 disabled:cursor-not-allowed
           ${isOpen ? 'ring-2 ring-blue-500 border-blue-500' : ''}
         `}
       >
         <span
-          className={`truncate ${selectedOption ? 'text-gray-900' : 'text-gray-500'}`}
+          className={`truncate ${selectedOption ? 'text-gray-900 dark:text-white' : 'text-gray-500 dark:text-gray-400'}`}
         >
           {selectedOption ? selectedOption.label : placeholderText}
         </span>
         <ChevronDown
           className={`
-            ${iconSizes[size]} text-gray-400 transition-transform duration-200
+            ${iconSizes[size]} text-gray-400 dark:text-gray-500 transition-transform duration-200
             ${isOpen ? 'rotate-180' : ''}
           `}
         />
@@ -112,7 +112,7 @@ export default function CustomSelect({
 
       {/* Dropdown Menu */}
       {isOpen && (
-        <div className="absolute z-50 w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden">
+        <div className="absolute z-50 w-full mt-1 bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg shadow-lg overflow-hidden">
           <div className="max-h-60 overflow-auto">
             {options.map((option, index) => (
               <button
@@ -125,12 +125,12 @@ export default function CustomSelect({
                   flex items-center justify-between
                   ${
                     option.disabled
-                      ? 'text-gray-400 cursor-not-allowed bg-gray-50'
-                      : 'text-gray-900 hover:bg-blue-50 hover:text-blue-900'
+                      ? 'text-gray-400 dark:text-gray-500 cursor-not-allowed bg-gray-50 dark:bg-gray-800'
+                      : 'text-gray-900 dark:text-white hover:bg-blue-50 dark:hover:bg-blue-900 hover:text-blue-900 dark:hover:text-blue-100'
                   }
                   ${
                     selectedOption?.value === option.value
-                      ? 'bg-blue-100 text-blue-900'
+                      ? 'bg-blue-100 dark:bg-blue-900 text-blue-900 dark:text-blue-100'
                       : ''
                   }
                   ${index === 0 ? 'rounded-t-lg' : ''}
@@ -139,7 +139,7 @@ export default function CustomSelect({
               >
                 <span className="truncate">{option.label}</span>
                 {selectedOption?.value === option.value && (
-                  <Check className="w-4 h-4 text-blue-600 flex-shrink-0" />
+                  <Check className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0" />
                 )}
               </button>
             ))}

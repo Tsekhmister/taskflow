@@ -20,7 +20,7 @@ i18n
   .init({
     resources,
     fallbackLng: 'en',
-    debug: process.env.NODE_ENV === 'development',
+    debug: false, // Отключаем debug сообщения для чистой консоли
 
     interpolation: {
       escapeValue: false,
